@@ -143,29 +143,29 @@ function init()
 	scene.add (hand);
 	
 	//wall
-	var wall_geom = new THREE.BoxGeometry (5,30,320);
+	var wall_geom = new THREE.BoxGeometry (5,30,325);
 	var wall_mat = new THREE.MeshLambertMaterial ({color: 0x1ec876});
 	wall = new THREE.Mesh (wall_geom, wall_mat);
-	wall.position.set (166, 0, 0);
+	wall.position.set (170, 0, 0);
 	scene.add (wall);
 	
-	var wall2_geom = new THREE.BoxGeometry (5,30,320);
+	var wall2_geom = new THREE.BoxGeometry (5,30,325);
 	var wall2_mat = new THREE.MeshLambertMaterial ({color: 0x1ec876});
 	wall2 = new THREE.Mesh (wall2_geom, wall2_mat);
-	wall2.position.set (-166, 0, 0);
+	wall2.position.set (-170, 0, 0);
 	scene.add (wall2);
 	
-	var wall3_geom = new THREE.BoxGeometry (5,30,330);
+	var wall3_geom = new THREE.BoxGeometry (5,30,335);
 	var wall3_mat = new THREE.MeshLambertMaterial ({color: 0x1ec876});
 	wall3 = new THREE.Mesh (wall3_geom, wall3_mat);
-	wall3.position.set (0, 0, 166);
+	wall3.position.set (0, 0, 170);
 	wall3.rotation.y = Math.PI / 2;
 	scene.add (wall3);
 	
-	var wall4_geom = new THREE.BoxGeometry (5,30,330);
+	var wall4_geom = new THREE.BoxGeometry (5,30,335);
 	var wall4_mat = new THREE.MeshLambertMaterial ({color: 0x1ec876});
 	wall4 = new THREE.Mesh (wall4_geom, wall4_mat);
-	wall4.position.set (0, 0, -166);
+	wall4.position.set (0, 0, -170);
 	wall4.rotation.y = Math.PI / 2;
 	scene.add (wall4);
 
